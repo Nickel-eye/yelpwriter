@@ -5,7 +5,6 @@ import argparse
 import math
 import re
 import markovify
-#import markovgen
 
 def crawl(restname):
 	get_yelp_page = \
@@ -78,16 +77,6 @@ def generate(restname,stars,length):
 	    	paragraph.append(text)
 	paragraph = " ".join(paragraph)
 	print(str(paragraph))
-
-
-	# Print three randomly-generated sentences of no more than 140 characters
-	#for i in range(3):
-	 #   print(text_model.make_short_sentence(140))
-
-	# markov = markovgen.Markov(rev)
-	# gentext = markov.generate_markov_text(length)
-	# print(gentext)
-	# return gentext
 
 
 
